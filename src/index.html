@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Folks</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-6.6.0-web/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&family=Oxygen:wght@300;400;700&family=Righteous&family=Rosario:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&family=Oxygen:wght@300;400;700&family=Righteous&family=Rosario:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script.js" defer></script>
+  </head>
+  <body class="bg-[#e5e1df] ">
+    <!--Start::Header-->
+    <header class="fixed top-0 right-0 left-0 z-50 bg-white">
+      <div class="w-full px-4 mx-auto">
+        <div class="flex -mx-4">
+          <nav
+            class="relative flex justify-between items-stretch w-full max-w-[1440px] p-0 mx-auto"
+          >
+            <div
+              class="relative flex items-center basis-1/4 max-w-1/4 px-4 md:hidden"
+            >
+              <button
+                id="burgerIcon"
+                class="relative p-4"
+                onclick="toggleMobileNavMenu()"
+              >
+                <i class="fa-solid fa-bars text-xl text-secondary"></i>
+              </button>
+            </div>
+
+            <a
+              href="#"
+              class="relative w-full flex-grow text-center max-w-1/2 py-3 md:text-left md:basis-2/12 md:max-w-2/12"
+            >
+              <img
+                class="h-14 mx-auto"
+                src="./assets/images/logo/image.png"
+                alt="logo"
+              />
+            </a>
+
+            <div
+              class="relative flex justify-end items-stretch basis-1/4 max-w-1/4 w-full px-4 md:order-2 md:basis-2/12 md:max-w-2/12"
+            >
+              <ul class="flex justify-between">
+                <li class="flex items-center px-0">
+                  <a href="" class="py-6 pr-3">
+                    <i class="fa-solid fa-user text-primary"></i>
+                  </a>
+                </li>
+                <li class="flex items-center px-0">
+                  <a href="" class="py-6 pr-3">
+                    <i class="fa-solid fa-cart-shopping text-primary"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="relative hidden md:flex items-stretch flex-grow w-full px-4 order-1 basis-7/12 max-w-7/12"
+            >
+              <div
+                class="w-full flex items-stretch font-primary font-medium text-2xl text-primary uppercase"
+              >
+                <ul class="flex items-center justify-evenly w-full">
+                  <li class="nav-item active">
+                    <a href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#">Brands</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--End::Heder-->
+
+    <!--Mobil::Menu-->
+    <div
+      id="mobileNavMenu"
+      class="hidden fixed bg-white top-0 left-0 right-0 h-full pt-20 z-40 transition-all ease-in-out duration-300"
+    >
+      <div class="flex items-stretch h-2/3 w-full">
+        <ul
+          class="flex flex-col items-center justify-center gap-4 w-full font-primary font-medium text-2xl text-primary uppercase"
+        >
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">shop</a>
+          </li>
+          <li>
+            <a href="#">Brands</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="absolute bottom-0 left-0 w-full text-center p-4 border-t border-primary"
+      >
+        <p class="font-secondary font-normal text-lg text-secondary">
+          Folks Verona<br />
+          Via Sole 7, 37121 - Verona (IT)<br />
+          Tel +39 045 803 3068<br />
+          <a href="#">info@folksverona.com</a>
+        </p>
+      </div>
+    </div>
+    <!--End::MobileMenu-->
+
+    <!--Breadcrumb-->
+    <div
+      id="catBreadcrumb"
+      class="bg-secondary flex justify-center py-2 font-secondary text-xs text-white mt-20 px-4 gap-1 md:text-base flex-wrap "
+    >
+      <a href="./src/index.html" onclick="handleAClick(event)" class="text-white">All products</a>
+    </div>
+    <!--End::Breadcrumb-->
+
+    <!--Start::MainContent-->
+    <div id="root">
+    
+
+    </div>
+    <!--Start::MainContent-->
+    
+  </body>
+</html>
+

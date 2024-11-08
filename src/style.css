@@ -1,0 +1,25 @@
+.nav-item {
+    position: relative; 
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: inherit; 
+    padding: 0.5rem 0; 
+}
+
+/* Underline effect on hover */
+.nav-item:hover a::after,
+.nav-item.active a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px; 
+    height: 2px; 
+    background-color: currentColor; 
+}
+
+.nav-item:hover a::after {
+    background-color: ##9A8E87; 
+}
